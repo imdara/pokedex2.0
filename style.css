@@ -1,0 +1,130 @@
+body {
+    background-color:aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align:center;
+}
+
+h3{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#searchBar {
+    width: 94%;
+    border: 1px solid rgb(67, 100, 129);
+    border-radius: 7px;
+}
+
+.btn-dark {
+    background-color: silver;
+}
+
+.card {
+    background-color: honeydew;
+    color: rgb(67, 100, 129);
+    width: 410px;
+    margin-bottom: 40px;
+    margin: 11px;
+    border: 1px solid rgb(67, 100, 129);
+    border-radius: 7px;
+}
+
+#popupcard {
+    background-color: honeydew;
+    color: rgb(67, 100, 129);
+    width: 90vw;
+    margin-bottom: 40px;
+    margin: 11px;
+    border-radius: 7px;
+}
+
+#popupimg {
+    height: 50vh;
+    width: 25vw;
+    align-self: center;
+}
+
+.card:hover {
+    box-shadow: 8px 8px silver;
+    cursor: pointer;
+}
+
+.btn-dark:hover {
+    box-shadow: 8px 8px silver;
+}
+
+.btn-dark:enabled {
+    background-color: honeydew;
+    color: rgb(67, 100, 129);
+    border: 1px solid rgb(67, 100, 129);
+}
+
+.card-img-top {
+    width: 400px;
+    height: 500px;
+    align-self: center;
+    padding: 10px 10px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+#listofpokemon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+nav {
+    text-align: center;
+}
+
+.popup {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#closeBtn {
+    position: fixed;
+    top: 3px;
+    right: 3px;
+}
+
+#first{
+    height: 50px;
+    width: 45px;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 500px) {
+    .card-img-top{
+        width: 300px;
+        height: 450px;
+        padding: 0;
+    }
+    #searchBar {
+        width: 65vw;
+        height: 7vh;
+    }
+    #first {
+        height: 7vh;
+    }
+    #closeBtn {
+        position: inherit;
+        height: 5vh;
+        width: 2px;
+        font-size:10px;
+    }
+}
